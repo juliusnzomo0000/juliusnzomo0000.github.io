@@ -2,15 +2,16 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-        content="Julius Nzomo — ICT & Software Developer building practical digital solutions through technology.">
+        content="Julius Nzomo — ICT & Software Developer building practical digital solutions through web development, programming, databases, and information systems.">
 
     <meta name="keywords"
-        content="Julius Nzomo, ICT Developer, Software Developer, Web Developer, Nairobi, Kenya">
+        content="Julius Nzomo, ICT Developer, Software Developer, Web Developer, Programming, Databases, Information Systems, Nairobi, Kenya">
 
     <meta name="author" content="Julius Nzomo">
 
@@ -18,10 +19,11 @@
 
     <meta name="theme-color" content="#111827">
 
-    <meta property="og:title" content="Julius Nzomo | ICT & Software Developer">
+    <meta property="og:title"
+        content="Julius Nzomo | ICT & Software Developer">
 
     <meta property="og:description"
-        content="Building practical digital solutions through technology.">
+        content="Building practical digital solutions through technology, software development, databases, and information systems.">
 
     <meta property="og:type" content="website">
 
@@ -96,6 +98,7 @@
             border-radius: 7px;
             font-weight: bold;
             font-size: 15px;
+
             transition:
                 background-color 0.2s ease,
                 transform 0.2s ease;
@@ -121,7 +124,7 @@
         .tagline {
             font-size: 19px;
             color: #d1d5db;
-            max-width: 650px;
+            max-width: 700px;
             margin: auto;
         }
 
@@ -145,6 +148,7 @@
             margin: 30px 15px;
             padding: 45px 35px;
             border-radius: 14px;
+
             box-shadow:
                 0 4px 18px rgba(0, 0, 0, 0.04);
         }
@@ -179,11 +183,34 @@
 
         .home-intro {
             font-size: 18px;
-            max-width: 800px;
+            max-width: 850px;
+        }
+
+        .home-highlights {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .highlight {
+            background-color: #f9fafb;
+            border: 1px solid #e5e7eb;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .highlight h3 {
+            margin-bottom: 7px;
+            color: #111827;
+        }
+
+        .highlight p {
+            font-size: 14px;
         }
 
         .button-container {
-            margin-top: 25px;
+            margin-top: 28px;
             display: flex;
             flex-wrap: wrap;
             gap: 12px;
@@ -197,6 +224,7 @@
             padding: 12px 20px;
             border-radius: 7px;
             font-weight: bold;
+
             transition:
                 background-color 0.2s ease,
                 transform 0.2s ease;
@@ -222,9 +250,9 @@
 
         .about-grid {
             display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 30px;
-            margin-top: 25px;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-top: 30px;
         }
 
         .about-box {
@@ -244,6 +272,33 @@
 
 
         /* =========================
+           PROFESSIONAL APPROACH
+        ========================= */
+
+        .approach-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            margin-top: 25px;
+        }
+
+        .approach-card {
+            background-color: #f9fafb;
+            border: 1px solid #e5e7eb;
+            padding: 22px;
+            border-radius: 12px;
+        }
+
+        .approach-card h3 {
+            margin-bottom: 8px;
+        }
+
+        .approach-card p {
+            font-size: 15px;
+        }
+
+
+        /* =========================
            SKILLS
         ========================= */
 
@@ -259,6 +314,7 @@
             border: 1px solid #e5e7eb;
             padding: 22px;
             border-radius: 12px;
+
             transition:
                 transform 0.2s ease,
                 border-color 0.2s ease;
@@ -271,6 +327,7 @@
 
         .skill-card h3 {
             margin-bottom: 8px;
+            color: #111827;
         }
 
         .skill-card p {
@@ -294,6 +351,7 @@
             border: 1px solid #e5e7eb;
             padding: 28px;
             border-radius: 14px;
+
             transition:
                 transform 0.2s ease,
                 border-color 0.2s ease;
@@ -325,8 +383,10 @@
             margin-top: 5px;
             padding: 6px 12px;
             border-radius: 20px;
+
             background-color: #e5e7eb;
             color: #374151;
+
             font-size: 13px;
             font-weight: bold;
         }
@@ -348,6 +408,7 @@
             border: 1px solid #e5e7eb;
             padding: 28px 18px;
             border-radius: 14px;
+
             transition:
                 transform 0.2s ease,
                 border-color 0.2s ease;
@@ -405,6 +466,14 @@
 
             .about-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .home-highlights {
+                grid-template-columns: 1fr;
+            }
+
+            .approach-container {
+                grid-template-columns: repeat(2, 1fr);
             }
 
             .skills-container {
@@ -480,8 +549,12 @@
                 line-height: 1.7;
             }
 
-            article {
-                padding: 20px;
+            .home-highlights {
+                grid-template-columns: 1fr;
+            }
+
+            .approach-container {
+                grid-template-columns: 1fr;
             }
 
             .skills-container {
@@ -490,6 +563,10 @@
 
             .contact-container {
                 grid-template-columns: 1fr;
+            }
+
+            article {
+                padding: 20px;
             }
 
             .contact-card {
@@ -511,6 +588,7 @@
         }
 
     </style>
+
 </head>
 
 
@@ -559,7 +637,8 @@
 
 
         <p class="tagline">
-            Building practical digital solutions through technology.
+            Building practical digital solutions through technology,
+            programming, and problem-solving.
         </p>
 
     </header>
@@ -585,11 +664,64 @@
 
 
             <p class="home-intro">
+
                 I build practical technology solutions focused on
                 functionality, usability, and solving real-world problems
-                through software, web technologies, databases, and
-                information systems.
+                through software development, web technologies, databases,
+                and information systems.
+
             </p>
+
+
+            <div class="home-highlights">
+
+
+                <div class="highlight">
+
+                    <h3>
+                        Software Development
+                    </h3>
+
+                    <p>
+                        Developing functional applications and technology
+                        solutions using structured programming and modern
+                        development practices.
+                    </p>
+
+                </div>
+
+
+
+                <div class="highlight">
+
+                    <h3>
+                        Systems &amp; Data
+                    </h3>
+
+                    <p>
+                        Working with databases, information systems, system
+                        analysis, and structured data to support useful
+                        solutions.
+                    </p>
+
+                </div>
+
+
+
+                <div class="highlight">
+
+                    <h3>
+                        Problem Solving
+                    </h3>
+
+                    <p>
+                        Breaking practical problems into structured,
+                        understandable, and implementable technical solutions.
+                    </p>
+
+                </div>
+
+            </div>
 
 
             <div class="button-container">
@@ -621,976 +753,27 @@
 
 
             <p>
-                I am Julius Nzomo, an ICT and software developer with a
-                foundation in software development, web technologies,
-                databases, networking, and information systems.
-            </p>
 
-
-            <p>
-                I design and build practical technology solutions with a
-                focus on functionality, usability, and solving real problems
-                through technology.
-            </p>
-
-
-            <p>
-                My approach combines technical knowledge, structured
-                problem-solving, and continuous improvement to create useful
-                and reliable digital solutions.
-            </p>
-
-
-            <div class="about-grid">
-
-
-                <div class="about-box">
-
-                    <h3>
-                        Education
-                    </h3>
-
-
-                    <p>
-                        Diploma in Information and Communication Technology
-                    </p>
-
-                </div>
-
-
-
-                <div class="about-box">
-
-                    <h3>
-                        Professional Focus
-                    </h3>
-
-
-                    <p>
-                        Web Development
-                    </p>
-
-                    <p>
-                        Software &amp; Application Development
-                    </p>
-
-                    <p>
-                        Database Systems
-                    </p>
-
-                    <p>
-                        Networking
-                    </p>
-
-                    <p>
-                        Information Systems
-                    </p>
-
-                    <p>
-                        ICT Solutions
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             SKILLS
-        ========================== -->
-
-        <section id="skills">
-
-            <h2>
-                Technical Skills
-            </h2>
-
-
-            <p>
-                My technical foundation covers software development, web
-                technologies, databases, networking, systems analysis, and
-                practical ICT tools.
-            </p>
-
-
-            <div class="skills-container">
-
-
-                <div class="skill-card">
-
-                    <h3>
-                        HTML
-                    </h3>
-
-                    <p>
-                        Building structured and semantic web pages.
-                    </p>
-
-                </div>
-
-
-
-                <div class="skill-card">
-
-                    <h3>
-                        CSS
-                    </h3>
-
-                    <p>
-                        Creating responsive layouts and professional
-                        interfaces.
-                    </p>
-
-                </div>
-
-
-
-                <div class="skill-card">
-
-                    <h3>
-                        JavaScript
-                    </h3>
-
-                    <p>
-                        Adding functionality and interactive behavior to
-                        websites.
-                    </p>
-
-                </div>
-
-
-
-                <div class="skill-card">
-
-                    <h3>
-                        Programming
-                    </h3>
-
-                    <p>
-                        Structured programming and object-oriented
-                        programming concepts.
-                    </p>
-
-                </div>
-
-
-
-                <div class="skill-card">
-
-                    <h3>
-                        Databases
-                    </h3>
-
-                    <p>
-                        Database management, design, concepts, and data
-                        organization.
-                    </p>
-
-                </div>
-
-
-
-                <div class="skill-card">
-
-                    <h3>
-                        Systems Analysis
-                    </h3>
-
-                    <p>
-                        Systems analysis and design with structured
-                        problem-solving.
-                    </p>
-
-                </div>
-
-
-
-                <div class="skill-card">
-
-                    <h3>
-                        Networking
-                    </h3>
-
-                    <p>
-                        Data communication and networking fundamentals.
-                    </p>
-
-                </div>
-
-
-
-                <div class="skill-card">
-
-                    <h3>
-                        Information Systems
-                    </h3>
-
-                    <p>
-                        Management information systems and business
-                        technology concepts.
-                    </p>
-
-                </div>
-
-
-
-                <div class="skill-card">
-
-                    <h3>
-                        ICT Tools
-                    </h3>
-
-                    <p>
-                        Practical computer applications and ICT tools.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             PROJECTS
-        ========================== -->
-
-        <section id="projects">
-
-            <h2>
-                Projects
-            </h2>
-
-
-            <p>
-                Selected work demonstrating practical application of
-                technology to real problems.
-            </p>
-
-
-            <div class="projects-container">
-
-
-                <article>
-
-                    <h3>
-                        Pillar Ledger
-                    </h3>
-
-
-                    <p>
-                        A personal execution and performance tracking system
-                        designed to organize and monitor daily progress across
-                        Faith, Body, Mind, and Capital.
-                    </p>
-
-
-                    <p class="technology">
-                        Technologies: Google Sheets &amp; Glide
-                    </p>
-
-
-                    <span class="project-status">
-                        Developed
-                    </span>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             CONTACT
-        ========================== -->
-
-        <section id="contact">
-
-            <h2>
-                Contact
-            </h2>
-
-
-            <p>
-                Interested in working together or discussing a technology
-                project? Get in touch.
-            </p>
-
-
-            <div class="contact-container">
-
-
-                <div class="contact-card">
-
-                    <h3>
-                        Phone
-                    </h3>
-
-
-                    <p>
-                        <a href="tel:+254743357206">
-                            +254 743 357 206
-                        </a>
-                    </p>
-
-                </div>
-
-
-
-                <div class="contact-card">
-
-                    <h3>
-                        Email
-                    </h3>
-
-
-                    <p>
-                        <a h<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-        content="Julius Nzomo — ICT & Software Developer building practical digital solutions through technology.">
-
-    <meta name="keywords"
-        content="Julius Nzomo, ICT Developer, Software Developer, Web Developer, Nairobi, Kenya">
-
-    <meta name="author" content="Julius Nzomo">
-
-    <meta name="robots" content="index, follow">
-
-    <meta name="theme-color" content="#111827">
-
-    <meta property="og:title" content="Julius Nzomo | ICT & Software Developer">
-
-    <meta property="og:description"
-        content="Building practical digital solutions through technology.">
-
-    <meta property="og:type" content="website">
-
-    <title>Julius Nzomo | ICT & Software Developer</title>
-
-
-    <style>
-
-        /* =========================
-           RESET & GLOBAL
-        ========================= */
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        html {
-            scroll-behavior: smooth;
-            scroll-padding-top: 20px;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f3f4f6;
-            color: #111827;
-            line-height: 1.6;
-        }
-
-        a {
-            color: inherit;
-        }
-
-
-        /* =========================
-           HEADER
-        ========================= */
-
-        header {
-            background-color: #111827;
-            color: white;
-            text-align: center;
-            padding: 25px 20px 90px;
-        }
-
-        .brand {
-            font-size: 14px;
-            font-weight: bold;
-            letter-spacing: 4px;
-            margin-bottom: 35px;
-        }
-
-
-        /* =========================
-           NAVIGATION
-        ========================= */
-
-        nav {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-bottom: 55px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 16px;
-            border-radius: 7px;
-            font-weight: bold;
-            font-size: 15px;
-            transition:
-                background-color 0.2s ease,
-                transform 0.2s ease;
-        }
-
-        nav a:hover,
-        nav a.active {
-            background-color: #2563eb;
-            transform: translateY(-2px);
-        }
-
-
-        /* =========================
-           HEADER CONTENT
-        ========================= */
-
-        header h1 {
-            font-size: 46px;
-            line-height: 1.2;
-            margin-bottom: 15px;
-        }
-
-        .tagline {
-            font-size: 19px;
-            color: #d1d5db;
-            max-width: 650px;
-            margin: auto;
-        }
-
-
-        /* =========================
-           MAIN
-        ========================= */
-
-        main {
-            max-width: 1100px;
-            margin: auto;
-        }
-
-
-        /* =========================
-           SECTIONS
-        ========================= */
-
-        section {
-            background-color: white;
-            margin: 30px 15px;
-            padding: 45px 35px;
-            border-radius: 14px;
-            box-shadow:
-                0 4px 18px rgba(0, 0, 0, 0.04);
-        }
-
-        section h2 {
-            font-size: 30px;
-            margin-bottom: 15px;
-            color: #111827;
-        }
-
-        section h3 {
-            color: #374151;
-            margin-bottom: 10px;
-        }
-
-        section p {
-            color: #4b5563;
-        }
-
-
-        /* =========================
-           HOME
-        ========================= */
-
-        #home {
-            margin-top: -45px;
-        }
-
-        #home h2 {
-            font-size: 34px;
-        }
-
-        .home-intro {
-            font-size: 18px;
-            max-width: 800px;
-        }
-
-        .button-container {
-            margin-top: 25px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        .button {
-            display: inline-block;
-            background-color: #2563eb;
-            color: white;
-            text-decoration: none;
-            padding: 12px 20px;
-            border-radius: 7px;
-            font-weight: bold;
-            transition:
-                background-color 0.2s ease,
-                transform 0.2s ease;
-        }
-
-        .button:hover {
-            background-color: #1d4ed8;
-            transform: translateY(-2px);
-        }
-
-        .button.secondary {
-            background-color: #111827;
-        }
-
-        .button.secondary:hover {
-            background-color: #374151;
-        }
-
-
-        /* =========================
-           ABOUT
-        ========================= */
-
-        .about-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 30px;
-            margin-top: 25px;
-        }
-
-        .about-box {
-            background-color: #f9fafb;
-            border: 1px solid #e5e7eb;
-            padding: 24px;
-            border-radius: 12px;
-        }
-
-        .about-box h3 {
-            margin-bottom: 12px;
-        }
-
-        .about-box p {
-            margin-bottom: 10px;
-        }
-
-
-        /* =========================
-           SKILLS
-        ========================= */
-
-        .skills-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 18px;
-            margin-top: 25px;
-        }
-
-        .skill-card {
-            background-color: #f9fafb;
-            border: 1px solid #e5e7eb;
-            padding: 22px;
-            border-radius: 12px;
-            transition:
-                transform 0.2s ease,
-                border-color 0.2s ease;
-        }
-
-        .skill-card:hover {
-            transform: translateY(-4px);
-            border-color: #2563eb;
-        }
-
-        .skill-card h3 {
-            margin-bottom: 8px;
-        }
-
-        .skill-card p {
-            font-size: 15px;
-        }
-
-
-        /* =========================
-           PROJECTS
-        ========================= */
-
-        .projects-container {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 25px;
-            margin-top: 25px;
-        }
-
-        article {
-            background-color: #f9fafb;
-            border: 1px solid #e5e7eb;
-            padding: 28px;
-            border-radius: 14px;
-            transition:
-                transform 0.2s ease,
-                border-color 0.2s ease;
-        }
-
-        article:hover {
-            transform: translateY(-5px);
-            border-color: #2563eb;
-        }
-
-        article h3 {
-            font-size: 23px;
-            color: #111827;
-            margin-bottom: 10px;
-        }
-
-        article p {
-            margin-bottom: 15px;
-        }
-
-        .technology {
-            font-size: 14px;
-            color: #374151;
-            font-weight: bold;
-        }
-
-        .project-status {
-            display: inline-block;
-            margin-top: 5px;
-            padding: 6px 12px;
-            border-radius: 20px;
-            background-color: #e5e7eb;
-            color: #374151;
-            font-size: 13px;
-            font-weight: bold;
-        }
-
-
-        /* =========================
-           CONTACT
-        ========================= */
-
-        .contact-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 18px;
-            margin-top: 25px;
-        }
-
-        .contact-card {
-            background-color: #f9fafb;
-            border: 1px solid #e5e7eb;
-            padding: 28px 18px;
-            border-radius: 14px;
-            transition:
-                transform 0.2s ease,
-                border-color 0.2s ease;
-        }
-
-        .contact-card:hover {
-            transform: translateY(-4px);
-            border-color: #2563eb;
-        }
-
-        .contact-card h3 {
-            margin-top: 0;
-            color: #111827;
-        }
-
-        .contact-card p {
-            font-size: 16px;
-        }
-
-        .contact-card a {
-            color: #2563eb;
-            text-decoration: none;
-            font-weight: bold;
-            word-break: break-word;
-        }
-
-        .contact-card a:hover {
-            text-decoration: underline;
-        }
-
-
-        /* =========================
-           FOOTER
-        ========================= */
-
-        footer {
-            background-color: #111827;
-            color: #9ca3af;
-            text-align: center;
-            padding: 30px 20px;
-            margin-top: 40px;
-        }
-
-        footer p {
-            color: #9ca3af;
-            font-size: 14px;
-        }
-
-
-        /* =========================
-           TABLET
-        ========================= */
-
-        @media (max-width: 800px) {
-
-            .about-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .skills-container {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .contact-container {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-        }
-
-
-        /* =========================
-           MOBILE
-        ========================= */
-
-        @media (max-width: 600px) {
-
-            header {
-                padding: 20px 15px 55px;
-            }
-
-            nav {
-                gap: 5px;
-                margin-bottom: 40px;
-            }
-
-            nav a {
-                font-size: 13px;
-                padding: 8px 10px;
-            }
-
-            .brand {
-                font-size: 11px;
-                letter-spacing: 2.5px;
-            }
-
-            header h1 {
-                font-size: 30px;
-                line-height: 1.2;
-            }
-
-            .tagline {
-                font-size: 16px;
-                line-height: 1.5;
-            }
-
-            #home {
-                margin-top: -30px;
-            }
-
-            #home h2 {
-                font-size: 26px;
-            }
-
-            section {
-                margin: 18px 10px;
-                padding: 28px 20px;
-                border-radius: 12px;
-            }
-
-            section h2 {
-                font-size: 26px;
-            }
-
-            section h3 {
-                font-size: 20px;
-            }
-
-            p {
-                font-size: 16px;
-                line-height: 1.7;
-            }
-
-            article {
-                padding: 20px;
-            }
-
-            .skills-container {
-                grid-template-columns: 1fr;
-            }
-
-            .contact-container {
-                grid-template-columns: 1fr;
-            }
-
-            .contact-card {
-                padding: 22px 16px;
-            }
-
-            .button-container {
-                flex-direction: column;
-            }
-
-            .button {
-                text-align: center;
-            }
-
-            footer {
-                padding: 25px 15px;
-            }
-
-        }
-
-    </style>
-</head>
-
-
-<body>
-
-
-    <!-- =========================
-         HEADER
-    ========================== -->
-
-    <header>
-
-        <div class="brand">
-            JULIUS NZOMO
-        </div>
-
-
-        <nav>
-
-            <a href="#home" class="active">
-                Home
-            </a>
-
-            <a href="#about">
-                About
-            </a>
-
-            <a href="#skills">
-                Skills
-            </a>
-
-            <a href="#projects">
-                Projects
-            </a>
-
-            <a href="#contact">
-                Contact
-            </a>
-
-        </nav>
-
-
-        <h1>
-            ICT &amp; Software Developer
-        </h1>
-
-
-        <p class="tagline">
-            Building practical digital solutions through technology.
-        </p>
-
-    </header>
-
-
-
-    <!-- =========================
-         MAIN
-    ========================== -->
-
-    <main>
-
-
-        <!-- =========================
-             HOME
-        ========================== -->
-
-        <section id="home">
-
-            <h2>
-                Building Practical Digital Solutions
-            </h2>
-
-
-            <p class="home-intro">
-                I build practical technology solutions focused on
-                functionality, usability, and solving real-world problems
-                through software, web technologies, databases, and
+                I am Julius Nzomo, an ICT and software developer focused on
+                building practical digital solutions through programming,
+                web technologies, databases, systems analysis, and
                 information systems.
-            </p>
 
-
-            <div class="button-container">
-
-                <a href="#projects" class="button">
-                    View My Projects
-                </a>
-
-
-                <a href="#contact" class="button secondary">
-                    Contact Me
-                </a>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             ABOUT
-        ========================== -->
-
-        <section id="about">
-
-            <h2>
-                About Me
-            </h2>
-
-
-            <p>
-                I am Julius Nzomo, an ICT and software developer with a
-                foundation in software development, web technologies,
-                databases, networking, and information systems.
             </p>
 
 
             <p>
-                I design and build practical technology solutions with a
-                focus on functionality, usability, and solving real problems
-                through technology.
+
+                My work focuses on turning real-world requirements into
+                useful technology solutions. I approach development through
+                structured problem-solving, continuous learning, testing,
+                and improvement.
+
             </p>
 
 
             <p>
-                My approach combines technical knowledge, structured
-                problem-solving, and continuous improvement to create useful
-                and reliable digital solutions.
+I apply my ICT knowledge to software development, web technologies, databases, systems analysis, and information systems to build practical and reliable digital solutions. I approach each project with a focus on functionality, problem-solving, usability, and delivering results.
             </p>
 
 
@@ -1620,11 +803,11 @@
 
 
                     <p>
-                        Web Development
+                        Software Development
                     </p>
 
                     <p>
-                        Software &amp; Application Development
+                        Web Development
                     </p>
 
                     <p>
@@ -1632,7 +815,7 @@
                     </p>
 
                     <p>
-                        Networking
+                        Systems Analysis &amp; Design
                     </p>
 
                     <p>
@@ -1640,7 +823,81 @@
                     </p>
 
                     <p>
-                        ICT Solutions
+                        Networking
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             PROFESSIONAL APPROACH
+        ========================== -->
+
+        <section id="approach">
+
+            <h2>
+                Professional Approach
+            </h2>
+
+
+            <p>
+
+                I focus on developing practical technical capability rather
+                than simply collecting technologies. Each project is an
+                opportunity to improve how I analyze problems, design
+                solutions, write code, work with data, and deliver usable
+                systems.
+
+            </p>
+
+
+            <div class="approach-container">
+
+
+                <div class="approach-card">
+
+                    <h3>
+                        Understand
+                    </h3>
+
+                    <p>
+                        Identify the problem, requirements, users, and
+                        expected outcome before building.
+                    </p>
+
+                </div>
+
+
+
+                <div class="approach-card">
+
+                    <h3>
+                        Build
+                    </h3>
+
+                    <p>
+                        Translate requirements into structured software,
+                        interfaces, data, and system functionality.
+                    </p>
+
+                </div>
+
+
+
+                <div class="approach-card">
+
+                    <h3>
+                        Improve
+                    </h3>
+
+                    <p>
+                        Test, identify weaknesses, refine the solution, and
+                        continuously develop technical capability.
                     </p>
 
                 </div>
@@ -1663,9 +920,11 @@
 
 
             <p>
-                My technical foundation covers software development, web
-                technologies, databases, networking, systems analysis, and
-                practical ICT tools.
+
+                My technical foundation spans programming, web development,
+                databases, systems analysis, networking, information
+                systems, and software development fundamentals.
+
             </p>
 
 
@@ -1679,7 +938,8 @@
                     </h3>
 
                     <p>
-                        Building structured and semantic web pages.
+                        Building structured, semantic, and accessible web
+                        pages.
                     </p>
 
                 </div>
@@ -1693,8 +953,8 @@
                     </h3>
 
                     <p>
-                        Creating responsive layouts and professional
-                        interfaces.
+                        Creating responsive layouts, interfaces, spacing,
+                        typography, and visual presentation.
                     </p>
 
                 </div>
@@ -1708,8 +968,8 @@
                     </h3>
 
                     <p>
-                        Adding functionality and interactive behavior to
-                        websites.
+                        Adding functionality, logic, interaction, and
+                        dynamic behavior to web applications.
                     </p>
 
                 </div>
@@ -1723,8 +983,9 @@
                     </h3>
 
                     <p>
-                        Structured programming and object-oriented
-                        programming concepts.
+                        Structured programming, programming logic,
+                        algorithms, and object-oriented programming
+                        concepts.
                     </p>
 
                 </div>
@@ -1734,12 +995,12 @@
                 <div class="skill-card">
 
                     <h3>
-                        Databases
+                        Databases &amp; SQL
                     </h3>
 
                     <p>
-                        Database management, design, concepts, and data
-                        organization.
+                        Database concepts, data organization, relational
+                        structures, queries, and data management.
                     </p>
 
                 </div>
@@ -1749,12 +1010,27 @@
                 <div class="skill-card">
 
                     <h3>
-                        Systems Analysis
+                        Systems Analysis &amp; Design
                     </h3>
 
                     <p>
-                        Systems analysis and design with structured
-                        problem-solving.
+                        Understanding requirements, analyzing processes,
+                        designing systems, and structured problem-solving.
+                    </p>
+
+                </div>
+
+
+
+                <div class="skill-card">
+
+                    <h3>
+                        Web Development
+                    </h3>
+
+                    <p>
+                        Developing responsive web interfaces and practical
+                        browser-based solutions.
                     </p>
 
                 </div>
@@ -1768,7 +1044,8 @@
                     </h3>
 
                     <p>
-                        Data communication and networking fundamentals.
+                        Data communication, networking concepts, network
+                        infrastructure, and connectivity fundamentals.
                     </p>
 
                 </div>
@@ -1782,8 +1059,8 @@
                     </h3>
 
                     <p>
-                        Management information systems and business
-                        technology concepts.
+                        Applying technology, information, and systems
+                        concepts to support organizational processes.
                     </p>
 
                 </div>
@@ -1793,11 +1070,42 @@
                 <div class="skill-card">
 
                     <h3>
-                        ICT Tools
+                        Software Development Fundamentals
                     </h3>
 
                     <p>
-                        Practical computer applications and ICT tools.
+                        Application structure, development workflow,
+                        testing concepts, debugging, and maintainable code.
+                    </p>
+
+                </div>
+
+
+
+                <div class="skill-card">
+
+                    <h3>
+                        Version Control
+                    </h3>
+
+                    <p>
+                        Understanding source-code management and development
+                        workflows using Git and GitHub.
+                    </p>
+
+                </div>
+
+
+
+                <div class="skill-card">
+
+                    <h3>
+                        Problem Solving
+                    </h3>
+
+                    <p>
+                        Breaking complex problems into smaller, logical, and
+                        implementable technical solutions.
                     </p>
 
                 </div>
@@ -1820,8 +1128,10 @@
 
 
             <p>
-                Selected work demonstrating practical application of
+
+                Selected work demonstrating the practical application of
                 technology to real problems.
+
             </p>
 
 
@@ -1836,14 +1146,28 @@
 
 
                     <p>
+
                         A personal execution and performance tracking system
                         designed to organize and monitor daily progress across
-                        Faith, Body, Mind, and Capital.
+                        four areas: Faith, Body, Mind, and Capital.
+
+                    </p>
+
+
+                    <p>
+
+                        The system uses structured daily records, automated
+                        scoring, weekly performance calculations, notes,
+                        categories, ratings, and progress tracking.
+
                     </p>
 
 
                     <p class="technology">
-                        Technologies: Google Sheets &amp; Glide
+
+                        Technologies:
+                        Google Sheets &amp; Glide
+
                     </p>
 
 
@@ -1871,8 +1195,10 @@
 
 
             <p>
+
                 Interested in working together or discussing a technology
                 project? Get in touch.
+
             </p>
 
 
@@ -1887,9 +1213,11 @@
 
 
                     <p>
+
                         <a href="tel:+254743357206">
                             +254 743 357 206
                         </a>
+
                     </p>
 
                 </div>
@@ -1904,9 +1232,11 @@
 
 
                     <p>
+
                         <a href="mailto:nzomoj89@gmail.com">
                             nzomoj89@gmail.com
                         </a>
+
                     </p>
 
                 </div>
@@ -1941,10 +1271,12 @@
     <footer>
 
         <p>
+
             &copy;
             <span id="year"></span>
             Julius Nzomo.
             All rights reserved.
+
         </p>
 
     </footer>
@@ -1964,12 +1296,14 @@
         const yearElement =
             document.getElementById("year");
 
+
         if (yearElement) {
 
             yearElement.textContent =
                 new Date().getFullYear();
 
         }
+
 
 
         /* =========================
@@ -1979,6 +1313,7 @@
         const sections =
             document.querySelectorAll("section");
 
+
         const navLinks =
             document.querySelectorAll("nav a");
 
@@ -1987,10 +1322,12 @@
 
             let currentSection = "";
 
+
             sections.forEach(function (section) {
 
                 const sectionTop =
                     section.offsetTop - 160;
+
 
                 const sectionHeight =
                     section.offsetHeight;
@@ -2027,6 +1364,7 @@
             });
 
         });
+
 
 
         /* =========================
